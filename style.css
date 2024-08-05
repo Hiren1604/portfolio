@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --white: #fff;
+    --black: #000;
+    --bento-bg: #111;
+    --bento-in-bg: #171717;
+    --dark-blue: #03346E;
+    --light-blue: #6EACDA;
+    --lighter-blue: #C2ECFF;
+    --font-main: "Silka Medium";
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    background-color: var(--black);
+    font-family: var(--font-main);
+}
+
+
+
+.container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    height: 100vh;
+    padding: 3rem;
+}
+
+
+.bento {
+    background-color: var(--bento-bg);
+    border-radius: 1rem;
+    box-shadow: 0px 0px 10px rgba(255,255,255,0.2);
+}
+
+
+
+.bento-1 {
+    grid-column: span 2;
+    grid-row: span 1;
+    
+}
+
+.bento-2 {
+    grid-column: span 2;
+    grid-row: span 1;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.bento-gr {
+    background-color: var(--bento-in-bg);
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bento-2-grid-1 {
+    text-align: center;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.bento-2-grid-1 h2 {
+    color: var(--lighter-blue);
+    font-weight: 300;
+    font-size: 2.5rem;
+}
+
+.swiper-container {
+    width: 70%;
+    padding: 1rem;
+}
+
+.swiper-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 0.5rem;
+    border-radius: 1px solid white;
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-slide i{
+    color: var(--white);
+    font-size: 1.5rem;
+}
+
+.resume-btn {
+    color: var(--lighter-blue);
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: 2px solid var(--dark-blue);
+    position: relative;
+    overflow: hidden;
+    transition: 0.6s;
+}
+
+.resume-btn::before,
+.resume-btn::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    opacity: 0.4;
+    left: 0;
+    top: 0;
+    filter: blur(30px);
+    transition: 0.6s;
+}
+
+
+.resume-btn::before {
+    width: 60px;
+    background-color: rgba(255, 255, 255, 0.6);
+    transform: translateX(-130px) skewX(-45deg);
+}
+
+.resume-btn::after {
+    width: 30px;
+    background-color: rgba(255, 255, 255, 0.6);
+    transform: translateX(-130px) skewX(-45deg);
+}
+
+.resume-btn:hover:before,
+.resume-btn:hover:after {
+    opacity: 0.8;
+    transform: translateX(270px) skewX(-45deg);
+}
+
+.resume-btn:hover {
+    background-color: var(--dark-blue);
+    color: var(--white);
+}
+
+.bento-3 {
+    grid-column: span 1;
+    grid-row: span 4;
+}
+
+.bento-4 {
+    grid-column: span 2;
+    grid-row: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.bento-4 h1 {
+    color: var(--white);
+    font-size: 4rem;
+    font-weight: 100;
+}
+
+.text {
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.sec-text {
+    color: var(--lighter-blue);
+    font-weight: 700;
+    position: relative;
+    margin-left: 4px;
+}
+
+.typed-cursor {
+    font-size: 2rem;
+    color: var(--lighter-blue);
+}
+
+.about-me {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-top: 16px;
+}
+
+.about-me .content {
+    color: var(--lighter-blue);
+    padding: 1rem;
+}
+
+.about-me .content i {
+    margin-right: 5px
+}
+
+.bento-5 {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.bento-6 {
+    grid-column: span 3;
+    grid-row: span 2; 
+}
