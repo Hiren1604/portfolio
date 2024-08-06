@@ -404,7 +404,7 @@ body {
 .proj-marquee-container {
     display: flex;
     width: 90%;
-    animation: marquee 30s linear infinite;
+    animation: marquee 50s linear infinite;
     white-space: nowrap;
     padding: 0 0.5rem;
 }
