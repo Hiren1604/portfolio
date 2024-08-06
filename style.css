@@ -93,7 +93,7 @@ body {
 
 .bento-2-grid-1 h2 {
     color: var(--lighter-blue);
-    font-weight: 300;
+    font-weight: 600;
     font-size: 2.5rem;
 }
 
@@ -139,6 +139,7 @@ body {
 .resume-btn {
     color: var(--lighter-blue);
     font-size: 1rem;
+    font-weight: 500;
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
     border: 2px solid var(--dark-blue);
@@ -206,7 +207,7 @@ body {
 .bento-4 h1 {
     color: var(--white);
     font-size: 4rem;
-    font-weight: 200;
+    font-weight: 800;
 }
 
 .text {
@@ -296,7 +297,7 @@ body {
 .proj-marquee-container {
     display: flex;
     width: 90%;
-    animation: marquee 20s linear infinite;
+    animation: marquee 25s linear infinite;
     white-space: nowrap;
     padding: 0 0.5rem;
 }
