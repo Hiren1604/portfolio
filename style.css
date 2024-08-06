@@ -235,6 +235,7 @@ body {
     justify-content: flex-start;
     gap: 1rem;
     margin-top: 16px;
+    font-weight: 700;
 }
 
 .about-me .content {
@@ -243,7 +244,7 @@ body {
 }
 
 .about-me .content i {
-    margin-right: 5px
+    margin-right: 10px
 }
 
 .bento-5 {
@@ -259,23 +260,47 @@ body {
     border-radius: 0.5rem;
 }
 
-.bento-5 .social-container .social-link {
+.bento-5 .social-container .social-link a{
+    width: 100%;
     padding: 0.9rem;
+    display: flex;
+    position: relative;
+    align-items: center;
+    overflow: hidden;
 }
 
-.bento-5 .social-container .social-link a i {
-    font-size: 1.7rem;
+.bento-5 .social-container .social-link a h2 {
+    font-weight: 600;
+}
+
+.bento-5 .social-container .social-link a .fa-solid {
+    font-size: 1.5rem;
+    position: absolute;
+    right: 20px;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+
+.bento-5 .social-container .social-link a:hover .fa-solid{
+    opacity: 1;
+    transform: rotate(-45deg);
+}
+
+.bento-5 .social-container .social-link a .fa-brands{
+    font-size: 1.5rem;
+    position: absolute;
+    left: 20px;
 }
 
 .bento-5 .social-container .social-link a{
     color: var(--lighter-blue);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around
 }
 
 .social-container-heading {
     color: var(--light-blue);
-    text-align: left;
 }
 
 .bento-6 {
@@ -297,7 +322,7 @@ body {
 .proj-marquee-container {
     display: flex;
     width: 90%;
-    animation: marquee 25s linear infinite;
+    animation: marquee 30s linear infinite;
     white-space: nowrap;
     padding: 0 0.5rem;
 }
