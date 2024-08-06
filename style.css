@@ -285,15 +285,32 @@ body {
     gap: 0.5rem;
     border-radius: 0.5rem;
     padding: 0.5rem;
+    position: relative;
+    overflow: hidden;
+}
+.proj-marquee-inner {
+    display: flex;
+    width: 200%;
+}
+
+.proj-marquee-container {
+    display: flex;
+    width: 90%;
+    animation: marquee 20s linear infinite;
+    white-space: nowrap;
+    padding: 0 0.5rem;
 }
 
 .project {
+    width: 80%;
     padding: 0.5rem;
     gap: 1rem;
     position: relative;
     display: block;
     align-content: center;
     text-align: center;
+    margin: 0 1rem;
+    padding: 0 0.5rem;
 }
 
 .project:hover .project-link {
@@ -302,7 +319,7 @@ body {
 
 .project .project-heading {
     color: var(--lighter-blue);
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .project .project-link {
