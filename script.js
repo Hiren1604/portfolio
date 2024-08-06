@@ -6,4 +6,3 @@ var typingEffect = new Typed(".sec-text", {
     backDelay: 1500
 });
 
-

@@ -31,8 +31,6 @@ body {
     font-family: var(--font-main);
 }
 
-
-
 .container {
     display: flex;
     height: 100%;
@@ -54,14 +52,11 @@ body {
     padding: 3rem;
 }
 
-
 .bento {
     background-color: var(--bento-bg);
     border-radius: 1rem;
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
 }
-
-
 
 .bento-1 {
     grid-column: span 2;
@@ -73,7 +68,7 @@ body {
     grid-column: span 2;
     grid-row: span 1;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 0.5fr;
     gap: 0.5rem;
     padding: 0.5rem;
     border-radius: 0.5rem;
@@ -88,9 +83,11 @@ body {
 }
 
 .bento-2-grid-1 {
+    display: flex;
     text-align: center;
     flex-direction: column;
     gap: 0.5rem;
+    width: 100%;
 }
 
 .bento-2-grid-1 h2 {
@@ -99,28 +96,43 @@ body {
     font-size: 2.5rem;
 }
 
-.swiper-container {
-    width: 70%;
+.marquee {
+    width: 30%;
     padding: 1rem;
+    position: relative;
+    overflow: hidden;
 }
 
-.swiper-wrapper {
+.marquee-inner {
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    border-radius: 0.5rem;
-    border-radius: 1px solid white;
+    width: 200%; /* Ensure the inner container is wide enough to hold both sets of logos */
 }
 
-.swiper-slide {
+.marquee-container {
+    display: flex;
+    animation: marquee 10s linear infinite;
+    white-space: nowrap;
+}
+
+.marquee-logos {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0 0.5rem;
 }
 
-.swiper-slide i {
+.marquee-logos i {
     color: var(--white);
     font-size: 1.5rem;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 .resume-btn {
@@ -223,7 +235,7 @@ body {
 
 .about-me .content {
     color: var(--lighter-blue);
-    padding: 1rem;
+    padding: 0.7rem 1rem;
 }
 
 .about-me .content i {
