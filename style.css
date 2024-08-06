@@ -103,7 +103,6 @@ body {
     z-index: 10;
 }
 
-
 .bento-1-grid-2 {
     display: flex;
     flex-direction: column;
@@ -145,7 +144,6 @@ body {
     filter: blur(30px);
     transition: 0.6s;
 }
-
 
 .resume-btn::before {
     width: 60px;
@@ -359,7 +357,6 @@ body {
     transition: 0.5s;
     opacity: 0;
 }
-
 
 .bento-5 .social-container .social-link a:hover .fa-solid{
     opacity: 1;
