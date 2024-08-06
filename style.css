@@ -50,7 +50,7 @@ body {
     padding: 0.5rem;
     border-radius: 0.5rem;
     height: 100vh;
-    padding: 3rem;
+    padding: 1rem;
 }
 
 .bento {
@@ -262,7 +262,7 @@ body {
 
 .bento-5 .social-container .social-link a{
     width: 100%;
-    padding: 0.9rem;
+    padding: 1.25rem;
     display: flex;
     position: relative;
     align-items: center;
