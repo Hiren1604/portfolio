@@ -10,11 +10,12 @@
     --white: #fff;
     --black: #000;
     --bento-bg: #111;
+    --button-bg: #1f1f1f;
     --bento-in-bg: #171717;
     --dark-blue: #03346E;
     --light-blue: #6EACDA;
     --lighter-blue: #C2ECFF;
-    --font-main: "Silka Medium";
+    --font-main: "Silka Medium","Figtree", sans-serif;
 }
 
 ul {
@@ -97,7 +98,7 @@ body {
 }
 
 .marquee {
-    width: 30%;
+    width: 35%;
     padding: 1rem;
     position: relative;
     overflow: hidden;
@@ -105,7 +106,7 @@ body {
 
 .marquee-inner {
     display: flex;
-    width: 200%; /* Ensure the inner container is wide enough to hold both sets of logos */
+    width: 200%;
 }
 
 .marquee-container {
@@ -187,6 +188,8 @@ body {
 .bento-3 {
     grid-column: span 1;
     grid-row: span 4;
+    position: relative;
+    overflow: hidden;
 }
 
 .bento-4 {
@@ -203,7 +206,7 @@ body {
 .bento-4 h1 {
     color: var(--white);
     font-size: 4rem;
-    font-weight: 100;
+    font-weight: 200;
 }
 
 .text {
@@ -247,7 +250,86 @@ body {
     grid-row: span 2;
 }
 
+.bento-5 .social-container {
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    gap: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.bento-5 .social-container .social-link {
+    padding: 0.9rem;
+}
+
+.bento-5 .social-container .social-link a i {
+    font-size: 1.7rem;
+}
+
+.bento-5 .social-container .social-link a{
+    color: var(--lighter-blue);
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-container-heading {
+    color: var(--light-blue);
+    text-align: left;
+}
+
 .bento-6 {
     grid-column: span 3;
     grid-row: span 2;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 0.5rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
 }
+
+.project {
+    padding: 0.5rem;
+    gap: 1rem;
+    position: relative;
+    display: block;
+    align-content: center;
+    text-align: center;
+}
+
+.project:hover .project-link {
+    opacity: 1;
+}
+
+.project .project-heading {
+    color: var(--lighter-blue);
+    font-size: 1rem;
+}
+
+.project .project-link {
+    opacity: 0;
+    color: var(--white);
+    background-color: var(--button-bg);
+    height: 2rem;
+    width: 2rem;
+    position: absolute;
+    bottom: 10%;
+    right: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--dark-blue);
+    border-radius: 0.5rem;
+    transition: 0.5s;
+}
+
+.project .project-link i {
+    transform: rotate(0);
+    transition: 0.3s;
+}
+
+.project .project-link:hover i{
+    transform: rotate(-45deg);
+}
+
+
+
