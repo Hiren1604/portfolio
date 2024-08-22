@@ -19,7 +19,26 @@ window.addEventListener("mousemove", (dets)=> {
         duration: 500,
         fill: "forwards"
     });
-})
+});
+
+const sr = ScrollReveal(
+    {
+        origin: "top",
+        distance: "80px",
+        duration: 1000,
+        delay: 300,
+        easing: "ease-in-out",
+        reset: true
+    }
+);
+
+sr.reveal(`.bento-1, .bento-3`, {origin: "left"});
+sr.reveal(`.bento-2, .bento-5`, {origin: "right"});
+sr.reveal(`.bento-4, .bento-6`, {origin: "bottom"});
+
+
+
+
 
 
 
