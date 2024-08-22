@@ -197,6 +197,7 @@ body {
     padding: 1rem;
     position: relative;
     overflow: hidden;
+    mask-image: linear-gradient(to right, transparent, var(--black) 10% 90%, transparent);
 }
 
 .marquee-inner {
@@ -329,6 +330,7 @@ body {
 }
 
 .bento-5 .social-container {
+    height: 100%;
     display: grid;
     grid-template-rows: repeat(4,1fr);
     gap: 0.5rem;
@@ -395,6 +397,7 @@ body {
     padding: 0.5rem;
     position: relative;
     overflow: hidden;
+    mask-image: linear-gradient(to right, transparent, var(--black) 10% 90%, transparent);
 }
 .proj-marquee-inner {
     display: flex;
@@ -454,4 +457,8 @@ body {
 
 .project .project-link:hover i{
     transform: rotate(-45deg);
+}
+
+.bento-6:hover .proj-marquee-container{
+    animation-play-state: paused;
 }
