@@ -24,7 +24,7 @@ window.addEventListener("mousemove", (dets)=> {
 const sr = ScrollReveal(
     {
         origin: "top",
-        distance: "80px",
+        distance: "40px",
         duration: 1000,
         delay: 300,
         easing: "ease-in-out",
