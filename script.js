@@ -24,7 +24,7 @@ window.addEventListener("mousemove", (dets)=> {
 const sr = ScrollReveal(
     {
         origin: "top",
-        distance: "40px",
+        distance: "10px",
         duration: 1000,
         delay: 300,
         easing: "ease-in-out",
@@ -36,7 +36,10 @@ sr.reveal(`.bento-1, .bento-3`, {origin: "left"});
 sr.reveal(`.bento-2, .bento-5`, {origin: "right"});
 sr.reveal(`.bento-4, .bento-6`, {origin: "bottom"});
 
-
+let loader = document.querySelector(".pre-loader");
+window.addEventListener("load",()=> {
+    loader.style.display = "none";
+})
 
 
 
