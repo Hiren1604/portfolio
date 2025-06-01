@@ -35,6 +35,14 @@ const sr = ScrollReveal(
 sr.reveal(`.bento-1, .bento-3`, {origin: "left"});
 sr.reveal(`.bento-2, .bento-5`, {origin: "right"});
 sr.reveal(`.bento-4, .bento-6`, {origin: "bottom"});
+sr.reveal('.bento-3-grid-1', {
+    origin: 'top',
+    distance: '10px',
+    viewFactor: 0.1,
+    duration: 1000,
+    delay: 100,
+    reset: true
+});
 
 let loader = document.querySelector(".pre-loader");
 window.addEventListener("load",()=> {
